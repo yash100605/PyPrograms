@@ -47,10 +47,10 @@ except ImportError:
     print("Module not found!")
 
 # 8.NameError:
-try:
-    print(piew_piew)  # This will raise NameError
-except NameError:
-    print("Variable is not defined!")
+# try:
+#     print(piew_piew)  # This will raise NameError
+# except NameError:
+#     print("Variable is not defined!")
 
 # 9.MemoryError:
 try:
