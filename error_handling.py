@@ -41,10 +41,10 @@ except TypeError:
     print("You can't add a string and an integer!")
 
 # 7.ImportError:
-try:
-    import yashkecode  # This will raise ImportError
-except ImportError:
-    print("Module not found!")
+# try:
+#     import yashkecode  # This will raise ImportError
+# except ImportError:
+#     print("Module not found!")
 
 # 8.NameError:
 # try:
