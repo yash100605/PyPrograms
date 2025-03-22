@@ -1,7 +1,10 @@
 import tkinter
+from tkinter import messagebox 
 root = tkinter.Tk()  
 root.geometry("500x500")
 root.config(bg='skyblue')
+def new_window():
+    messagebox.showinfo("Success", "Login successful")
 
 label1 = tkinter.Label(root, text="Enter Username", font=('Arial 18')) 
 label1.place(x=160, y=20)
@@ -17,7 +20,14 @@ passvar = tkinter.StringVar()
 t2 = tkinter.Entry(root, textvariable=passvar, font=("Arial 18"), show="*")  
 t2.place(x=120, y=200)
 
-button = tkinter.Button(root, font=('Times New Roman', 10), text='Login', width=15, height=2, bg='orangered')
+button = tkinter.Button(root, 
+                        font=('Times New Roman', 10), 
+                        text='Login', 
+                        width=15, 
+                        height=2, 
+                        bg='orangered',
+                        command = new_window,
+                        )
 button.place(x=190, y=300)
 
 root.mainloop()
